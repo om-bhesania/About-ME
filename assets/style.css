@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url(https://i.ibb.co/HrfVRcx/menu.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.toggle.active {
+    background: url(https://i.ibb.co/rt3HybH/close.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.showcase {
+    margin-right: 50%;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.showcase.active {
+    right: 300px;
+}
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #03a9f4;
+    mix-blend-mode: overlay;
+}
+
+.text {
+    
+    position: relative;
+    z-index: 10;
+}
+
+.text h2 {
+    font-size: 5em;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text h3 {
+    font-size: 4em;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text p {
+    font-size: 1.1em;
+    color: #fff;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.text a {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #111;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+.text a:hover {
+    letter-spacing: 6px;
+}
+
+.social {
+    position: absolute;
+    z-index: 10;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li a {
+    display: inline-block;
+    margin-right: 20px;
+    filter: invert(1);
+    transform: scale(0.5);
+    transition: 0.5s;
+}
+
+.social li a:hover {
+    transform: scale(0.5) translateY(-15px);
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul {
+    position: relative;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #111;
+}
+
+.menu ul li a:hover {
+    color: #03a9f4;
+}
+
+@media (max-width: 991px) {
+    .showcase,
+    .showcase header {
+        padding: 40px;
+    }
+    .text h2 {
+        font-size: 3em;
+    }
+    .text h3 {
+        font-size: 2em;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One'); 
+
+
+
+/*--Button Styles--*/
+.b{
+    margin-top: 40px;
+    margin-left: -190px;
+}
+.box{
+    margin-left:40%;
+    margin-top: -200px;
+}
+.btn-slice {
+  padding: 1.2rem 2.5rem;
+  border: 2px solid #ffffff;
+  border-radius: 0rem;
+  color: #581212;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  position: relative;
+  
+  -webkit-transition: all 1000ms cubic-bezier(0.890, 0, 0.140, 1); /* older webkit */
+  -webkit-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  -moz-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  -o-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); /* custom */
+
+  -webkit-transition-timing-function: cubic-bezier(0.890, 0, 0.140, 1); /* older webkit */
+  -webkit-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  -moz-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  -o-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); /* custom */
+}
+
+.btn-slice .top  {
+  position: relative;
+  height: 6px;
+  overflow: hidden;
+  top: 0;
+  -webkit-transition: all 100ms cubic-bezier(1.000, 0, 0.025, 1); /* older webkit */
+  -webkit-transition: all 100ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  -moz-transition: all 100ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  -o-transition: all 100ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  transition: all 100ms cubic-bezier(1.000, -0.055, 0.025, 1.040); /* custom */
+
+  -webkit-transition-timing-function: cubic-bezier(1.000, 0, 0.025, 1); /* older webkit */
+  -webkit-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  -moz-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  -o-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); /* custom */
+  
+  -webkit-transition-delay:0.1s;     
+  -moz-transition-delay::0.1s; 
+  -ms-transition-delay::0.1s;     
+  -o-transition-delay::0.1s;     
+  transition-delay::0.1s;
+}
+
+.btn-slice .bottom  {
+  position: relative;
+  height: 15px;
+  overflow: hidden;
+  bottom: 0;
+  -webkit-transition: all 300ms cubic-bezier(1.000, 0, 0.025, 1); /* older webkit */
+  -webkit-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  -moz-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  -o-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); /* custom */
+
+  -webkit-transition-timing-function: cubic-bezier(1.000, 0, 0.025, 1); /* older webkit */
+  -webkit-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  -moz-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  -o-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); /* custom */
+  
+  -webkit-transition-delay:0.1s;     
+  -moz-transition-delay::0.1s; 
+  -ms-transition-delay::0.1s;     
+  -o-transition-delay::0.1s;     
+  transition-delay::0.1s;
+}
+
+.btn-slice .bottom span {
+  top: -6px;
+  position: absolute;
+  left: 0;
+}
+
+.btn-slice:hover .top {
+  top: -5px;
+  -webkit-transition-delay:0.1s;     
+  -moz-transition-delay::0.1s; 
+  -ms-transition-delay::0.1s;     
+  -o-transition-delay::0.1s;     
+  transition-delay::0.1s; 
+}
+
+.btn-slice:hover .bottom {
+  bottom: -5px;
+  -webkit-transition-delay:0.1s;     
+  -moz-transition-delay::0.1s; 
+  -ms-transition-delay::0.1s;     
+  -o-transition-delay::0.1s;     
+  transition-delay::0.1s; 
+}
+.btn-slice:hover, .btn-slice:focus, .btn-slice:active {
+  margin-left: 10px;
+}
+.btn-slice:before{
+  content: '';
+  height: 1px;
+  width: 200px;
+  background-color: #ffffff;
+  position: absolute;
+  margin-top: 6px;
+  right: -35px;
+  
+  -webkit-transition: all 1000ms cubic-bezier(0.890, 0, 0.140, 1); /* older webkit */
+  -webkit-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  -moz-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  -o-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); /* custom */
+
+  -webkit-transition-timing-function: cubic-bezier(0.890, 0, 0.140, 1); /* older webkit */
+  -webkit-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  -moz-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  -o-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); /* custom */
+}
+.btn-slice:hover:before{
+  width: 130%;
+}
